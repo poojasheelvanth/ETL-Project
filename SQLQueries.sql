@@ -33,8 +33,8 @@ SELECT
 	, star.country
 	, COUNT(star.id) AS "Number Of Stores"
 	, hap.happiness
-FROM star
-JOIN hap
+FROM starbucks AS star
+JOIN happiness AS hap
 	ON star.country = hap.country
 GROUP BY 
 	star.brand
