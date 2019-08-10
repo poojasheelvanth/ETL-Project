@@ -40,4 +40,5 @@ GROUP BY
 	star.brand
 	, star.country
 	, hap.happiness
-ORDER BY hap.happiness;
+ORDER BY hap.happiness
+LIMIT 10;
